@@ -9,15 +9,12 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
-	"time"
 
 	osm "github.com/gnolang/gno/pkgs/os"
 	"github.com/gorilla/mux"
 	"github.com/gotuna/gotuna"
 
 	"github.com/gnolang/www_gno_land/static" // for static files
-	// for error types
-	// "github.com/gnolang/gno/pkgs/sdk"               // for baseapp (info, status)
 )
 
 var flags struct {
@@ -26,13 +23,10 @@ var flags struct {
 	homeContentFile string
 }
 
-var startedAt time.Time
-
 func init() {
 	flag.StringVar(&flags.bindAddr, "bind", "127.0.0.1:8888", "server listening address")
 	flag.StringVar(&flags.viewsDir, "views-dir", "./views", "views directory location")
 	flag.StringVar(&flags.homeContentFile, "home-content", "./HOME.md", "home content filepath")
-	startedAt = time.Now()
 }
 
 func main() {
