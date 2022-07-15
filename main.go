@@ -40,6 +40,8 @@ func main() {
 	}
 
 	app.Router.Handle("/", handlerHome(app))
+	app.Router.Handle("/r/{path:.*}", handlerRedirect(app))
+	app.Router.Handle("/p/{path:.*}", handlerRedirect(app))
 	app.Router.Handle("/static/{path:.+}", handlerStaticFile(app))
 	app.Router.Handle("/favicon.ico", handlerFavicon(app))
 
@@ -57,6 +59,12 @@ func handlerHome(app gotuna.App) http.Handler {
 		app.NewTemplatingEngine().
 			Set("HomeContent", string(homeContent)).
 			Render(w, r, "home.html", "header.html")
+	})
+}
+
+func handlerRedirect(app gotuna.App) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		http.Redirect(w, r, "https://test2.gno.land"+r.URL.Path, http.StatusFound)
 	})
 }
 
