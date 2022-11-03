@@ -9,4 +9,3 @@ Welcome to **Gno.land**.
    * [test2.gno.land](https://test2.gno.land) (archive)
    * [test1.gno.land](https://test1.gno.land) (archive)
    * [staging.gno.land](https://staging.gno.land) (wiped every commit to master)
- * Official channel: [Discord](https://discord.gg/tF2X8M6cVj)

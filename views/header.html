@@ -3,3 +3,36 @@
     <a href="https://github.com/gnolang/gno"><img src="/static/img/github-mark-32px.png" alt="Github"/></a>
 </div>
 {{ end }}
+
+{{ define "header_logo" }}
+  <a id="logo" href="/"><img src="/static/img/logo.png" alt="Gno.land" title="Gno.land" /></a>
+{{ end }}
+
+{{ define "footer" }}
+  <div id="footer">
+    <div class="social social-black">
+      Official channel: <a href="https://discord.gg/yebb86g7">Discord</a>
+    </div>
+    <div class="social">
+      Other channels: <a href="https://t.me">Telegram</a>
+    </div>
+    <div class="social">
+      Socials: <a href="https://twitter.com">Twitter</a>
+    </div>
+  </div>
+{{ end }}
+
+{{ define "js" }}
+  <script type="text/javascript" src="/static/js/marked.min.js"></script>
+  <script type="text/javascript" src="/static/js/purify.min.js"></script>
+  <script type="text/javascript">
+    function main() {
+        marked.setOptions({gfm:true});
+        window.contents = document.getElementById("source").innerHTML;
+        var doc = new DOMParser().parseFromString(window.contents, "text/html");
+        var contents = doc.documentElement.textContent
+        var parsed = marked.parse(contents);
+        document.getElementById("home").innerHTML = DOMPurify.sanitize(parsed, { USE_PROFILES: { html: true } });
+    };
+  </script>
+{{ end }}

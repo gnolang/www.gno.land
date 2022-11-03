@@ -1,154 +1,155 @@
+@import url("../font/font.css");
+
+
+
+html,
 body {
-	background-color: #F9F1E9;
-	font-family: "Helvetica", "Arial", "sans-serif";
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Roboto Mono", "Courier New", "sans-serif";
+    background-color: #eee;
+
+}
+
+body {
+    height: 100%;
+    width: 100%;
 }
 
 a {
-	color: #25172a;
+    color: #25172a;
 }
 
 input {
-	font-family: "Lucida Console", "Monaco", monospace;
-	background-color: #EEE;
-	border: 1px solid #CCC;
-	width: 25em;
+    font-family: "Roboto Mono", "Monaco", monospace;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    width: 25em;
 }
 
 blockquote {
-	padding: 0.5em 0 0.5em 1em;
-	background-color: #DDD;
+    background-color: #ddd;
 }
 
 blockquote blockquote {
-	margin: 0;
-	padding: 0.3em 0 0.5em 1em;
-	background-color: #AAA2;
+    margin: 0;
+    background-color: #aaa2;
 }
 
 pre {
-	background-color: #DDD;
+    background-color: #d7d9db;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #d7d9db;
+    margin: 20px;
+    height: calc(100vh - 40px);
 }
 
 #header {
-	background-color: #cecde1;
-	padding: 10px 10px 10px 10px;
+    background-color: #d7d9db;
+    padding: 22px;
 }
 
 #logo {
-	color: #25172a;
-	font-weight: bold;
-	font-size: 32px;
-	text-decoration: none;
-	position: relative;
-	top: 4px;
-}
-
-#logo_path {
-	font-size: 24px;
-	vertical-align: bottom;
+    color: #25172a;
+    position: relative;
+    top: 4px;
 }
 
 #logo_path a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 #logo_path a:hover {
-	text-decoration: underline;
-}
-
-#realm_links {
-	padding-left: 1em;
-	font-size: 0.9em;
-	color: gray;
+    text-decoration: underline;
 }
 
 #header_buttons {
-	float: right;
-	position: relative;
+    float: right;
+    position: relative;
 }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
-	text-decoration: none;
+#home h1,
+#home h2,
+#home h3,
+#home h4,
+#home h5,
+#home h6 {
+    margin: 0;
+    padding: 0;
 }
 
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{
-	text-decoration: underline ;
+#home p,
+#home h1,
+#home h2,
+#home h3,
+#home h4,
+#home h5,
+#home h6 {
+    padding: 22px;
+    margin: 0;
+    border-bottom: 1px solid #d7d9db;
 }
 
-hr {
-	border-bottom: 1px gray;
+#home ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-weight: 500;
 }
 
-.actions {
-	font-size: 0.9em;
-	color: #777;
+#home ul>li {
+    padding: 22px;
+    background-color: #fff;
 }
 
-.actions a {
-	color: #777;
+#home>ul>li {
+    border-bottom: 1px solid #d7d9db;
 }
 
 
-/*****************************************/
-/* package_dir.html */
-
-.dir_entry a {
-	text-decoration: none;
+#home>ul>li ul {
+    padding: 22px 0 0 22px;
+    background-color: #fff;
 }
 
-.dir_entry a:hover {
-	text-decoration: underline;
+.content {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
 }
 
-/*****************************************/
-/* realm_help.html */
-
-div.func_spec > table {
-	background-color: #EEE3DE;
-	width: 100%;
-	padding: 10px 10px 20px 10px;
-	margin-bottom: 20px;
-	border: 1px solid #C4B6B2;
+@media (max-width: 900px) {
+    .content {
+        flex-direction: column;
+    }
 }
 
-div.func_spec > table > tbody > tr > th {
-	width: 50px;
-	vertical-align: top;
-	text-align: right;
-	color: #777;
+#footer {
+    background-color: #d7d9db;
+    margin-top: auto;
+    width: 100%;
+    display: flex;
 }
 
-div.func_spec > table > tbody > tr.func_name > td {
-	padding-left: 115px;
+#footer .social {
+    padding-left: 22px;
 }
 
-th.func_param_name {
-	width: 100px;
-	vertical-align: top;
-	text-align: right;
-	padding-right: 5px;
+#footer .social a {
+    text-decoration: none;
+    padding: 22px;
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #000;
 }
 
-th.func_result_name {
-	width: 100px;
-	vertical-align: top;
-	text-align: right;
-	padding-right: 5px;
-}
-
-td.func_param_type, td.func_result_type {
-	font-size: 0.8em;
-	color: #777;
-}
-
-div.func_spec div.shell_command {
-	font-family: "Lucida Console", "Monaco", monospace;
-	margin-left: 50px;
-	font-size: 0.9em;
-	color: #777;
-}
-
-div.func_spec div.shell_command span {
-	display: inline-block;
-	margin-bottom: 10px;
+#footer .social-black a {
+    background-color: #000;
+    color: white;
 }
