@@ -59,12 +59,12 @@ func main() {
 }
 
 func handlerHome(app gotuna.App) http.Handler {
-	homeContent := osm.MustReadFile(flags.homeContentFile)
+	mainContent := osm.MustReadFile(flags.homeContentFile)
 
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		app.NewTemplatingEngine().
-			Set("HomeContent", string(homeContent)).
-			Render(w, r, "home.html", "header.html")
+			Set("MainContent", string(mainContent)).
+			Render(w, r, "home.html", "funcs.html")
 	})
 }
 
@@ -74,7 +74,7 @@ func handlerAbout(app gotuna.App) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		app.NewTemplatingEngine().
 			Set("MainContent", string(mainContent)).
-			Render(w, r, "sub-page.html", "header.html")
+			Render(w, r, "about.html", "funcs.html")
 	})
 }
 
@@ -84,7 +84,7 @@ func handlerGor(app gotuna.App) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		app.NewTemplatingEngine().
 			Set("MainContent", string(mainContent)).
-			Render(w, r, "sub-page.html", "header.html")
+			Render(w, r, "gor.html", "funcs.html")
 	})
 }
 
