@@ -18,15 +18,19 @@ import (
 )
 
 var flags struct {
-	bindAddr        string
-	viewsDir        string
-	homeContentFile string
+	bindAddr         string
+	viewsDir         string
+	homeContentFile  string
+	aboutContentFile string
+	gorContentFile   string
 }
 
 func init() {
 	flag.StringVar(&flags.bindAddr, "bind", "127.0.0.1:8888", "server listening address")
 	flag.StringVar(&flags.viewsDir, "views-dir", "./views", "views directory location")
 	flag.StringVar(&flags.homeContentFile, "home-content", "./HOME.md", "home content filepath")
+	flag.StringVar(&flags.aboutContentFile, "about-content", "./ABOUT.md", "about content filepath")
+	flag.StringVar(&flags.gorContentFile, "gor-content", "./GOR.md", "gor content filepath")
 }
 
 func main() {
@@ -40,6 +44,8 @@ func main() {
 	}
 
 	app.Router.Handle("/", handlerHome(app))
+	app.Router.Handle("/about", handlerAbout(app))
+	app.Router.Handle("/game-of-realms", handlerGor(app))
 	app.Router.Handle("/r/{path:.*}", handlerRedirect(app))
 	app.Router.Handle("/p/{path:.*}", handlerRedirect(app))
 	app.Router.Handle("/static/{path:.+}", handlerStaticFile(app))
@@ -53,12 +59,32 @@ func main() {
 }
 
 func handlerHome(app gotuna.App) http.Handler {
-	homeContent := osm.MustReadFile(flags.homeContentFile)
+	mainContent := osm.MustReadFile(flags.homeContentFile)
 
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		app.NewTemplatingEngine().
-			Set("HomeContent", string(homeContent)).
-			Render(w, r, "home.html", "header.html")
+			Set("MainContent", string(mainContent)).
+			Render(w, r, "home.html", "funcs.html")
+	})
+}
+
+func handlerAbout(app gotuna.App) http.Handler {
+	mainContent := osm.MustReadFile(flags.aboutContentFile)
+
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		app.NewTemplatingEngine().
+			Set("MainContent", string(mainContent)).
+			Render(w, r, "about.html", "funcs.html")
+	})
+}
+
+func handlerGor(app gotuna.App) http.Handler {
+	mainContent := osm.MustReadFile(flags.gorContentFile)
+
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		app.NewTemplatingEngine().
+			Set("MainContent", string(mainContent)).
+			Render(w, r, "gor.html", "funcs.html")
 	})
 }
 
