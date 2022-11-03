@@ -6,15 +6,20 @@ html,
 body {
     padding: 0;
     margin: 0;
-    font-size: 16px;
     font-family: "Roboto Mono", "Courier New", "sans-serif";
     background-color: #eee;
-
+    font-size: 15px;
 }
 
 body {
     height: 100%;
     width: 100%;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 a {
@@ -111,9 +116,7 @@ pre {
 #home>ul>li {
     padding: 22px;
     background-color: #fff;
-    list-style-type: disc;
-    list-style-position: inside;
-
+    list-style-type: none;
 }
 
 #home>ul>li {
@@ -121,26 +124,27 @@ pre {
     padding-left: 22px;
 }
 
-#home>ul>li::marker {
-    font-size: 2rem;
-    margin-right: 10px;
-    color: #d7d9db
+#home>ul>li:before {
+    content: url('../img/list.png');
+    display: inline-block;
+    vertical-align: middle;
+    width: 22px;
+    height: 26px;
 }
 
 #home>ul>li ul {
     padding: 22px 0 0 22px;
     background-color: #fff;
-    list-style-type: circle;
-    list-style-position: inside;
+    list-style-type: none;
 }
 
-#home>ul>li ul li::marker {
-    font-size: 2rem;
-    margin-right: 10px;
-    color: #d7d9db
+#home>ul>li ul li:before {
+    content: url('../img/list-alt.png');
+    display: inline-block;
+    vertical-align: middle;
+    width: 22px;
+    height: 26px;
 }
-
-
 
 #mc_embed_signup {
     padding: 22px;
@@ -156,7 +160,6 @@ pre {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     flex: 1
 }
 
@@ -166,7 +169,8 @@ pre {
 }
 
 #mc_embed_signup .mc-field-group input {
-    padding: 22px;
+    padding-top: 22px;
+    padding-bottom: 22px;
     border: 0px solid #fff;
     border-bottom: 1px solid #000;
     background: #fff;
@@ -178,11 +182,13 @@ pre {
     outline: none;
 }
 
-#mc-embedded-subscribe {
-    border: 1px solid #000 !important;
+#mc_embed_signup .mc-field-group #mc-embedded-subscribe {
+    border: 1px solid #000;
     padding: 22px;
     background: #fff;
+    color: #000;
 }
+
 
 .content {
     display: flex;
@@ -243,6 +249,7 @@ pre {
     margin-top: auto;
     width: 100%;
     display: flex;
+
 }
 
 #footer .social {
@@ -268,6 +275,13 @@ pre {
         flex-direction: column;
     }
 
+    #footer .social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 22px;
+    }
+
     #footer .social a {
         justify-content: end;
     }
@@ -283,7 +297,14 @@ pre {
     }
 
     #mc-embedded-subscribe {
-        margin: 22px
+        margin: 15px
+    }
+
+    #mc_embed_signup .mc-field-group input {
+        width: 100%;
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     .content {
