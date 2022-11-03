@@ -1,4 +1,4 @@
-Welcome to **Gno.land**.
+Welcome to **Gno.land**
 
  * [About Gno.land](/about)
  * News and Updates

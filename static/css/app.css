@@ -59,6 +59,7 @@ pre {
     color: #25172a;
     position: relative;
     top: 4px;
+    height: 45px;
 }
 
 #logo_path a {
@@ -84,7 +85,11 @@ pre {
     padding: 0;
 }
 
-#home p,
+#home p {
+    padding:22px;
+    margin:0;
+}
+
 #home h1,
 #home h2,
 #home h3,
@@ -96,7 +101,7 @@ pre {
     border-bottom: 1px solid #d7d9db;
 }
 
-#home ul {
+#home>ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -116,6 +121,7 @@ pre {
 #home>ul>li ul {
     padding: 22px 0 0 22px;
     background-color: #fff;
+    list-style-image: none;
 }
 
 .content {
@@ -152,4 +158,23 @@ pre {
 #footer .social-black a {
     background-color: #000;
     color: white;
+}
+
+/* MAILCHIMP */
+#mc_embed_signup {
+    padding: 22px;
+    background-color: #fff;
+}
+
+#mc_embed_signup input {
+    border: 0px solid #fff;
+    border-bottom: 1px solid #000;
+    background: #fff;
+    color: 000;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+#mc_embed_signup input:focus {
+    outline: none;
 }
