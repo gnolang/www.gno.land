@@ -164,7 +164,8 @@ pre {
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex: 1
+    flex: 1;
+    margin-top: 2em;
 }
 
 #mc_embed_signup .mc-field-group label {
