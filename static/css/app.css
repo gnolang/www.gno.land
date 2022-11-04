@@ -267,6 +267,8 @@ pre {
     display: inline-block;
     background-color: #fff;
     border: 1px solid #000;
+    min-width: 6rem;
+    text-align: center;
 }
 
 #footer .social-black a {
