@@ -2,7 +2,7 @@ Welcome to **Gno.land**
 
  * [About Gno.land](/about)
  * News and Updates
-   * [Game of Realms](/game-of-realms) -- An open worldwide competition for developers to build the best Gnolang smart-contracts.
+   * [Game of Realms](/game-of-realms) - An open worldwide competition for developers to build the best Gnolang smart-contracts.
  * [Blogs](https://test3.gno.land/r/gnoland/blog)
  * Testnets
    * **[test3.gno.land](https://test3.gno.land) (latest)**
