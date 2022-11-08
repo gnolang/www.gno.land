@@ -18,19 +18,15 @@ import (
 )
 
 var flags struct {
-	bindAddr         string
-	viewsDir         string
-	homeContentFile  string
-	aboutContentFile string
-	gorContentFile   string
+	bindAddr string
+	viewsDir string
+	pagesDir string
 }
 
 func init() {
 	flag.StringVar(&flags.bindAddr, "bind", "127.0.0.1:8888", "server listening address")
 	flag.StringVar(&flags.viewsDir, "views-dir", "./views", "views directory location")
-	flag.StringVar(&flags.homeContentFile, "home-content", "./HOME.md", "home content filepath")
-	flag.StringVar(&flags.aboutContentFile, "about-content", "./ABOUT.md", "about content filepath")
-	flag.StringVar(&flags.gorContentFile, "gor-content", "./GOR.md", "gor content filepath")
+	flag.StringVar(&flags.pagesDir, "pages-dir", "./pages", "pages directory location")
 }
 
 func main() {
@@ -59,7 +55,8 @@ func main() {
 }
 
 func handlerHome(app gotuna.App) http.Handler {
-	mainContent := osm.MustReadFile(flags.homeContentFile)
+	md := filepath.Join(flags.pagesDir, "HOME.md")
+	mainContent := osm.MustReadFile(md)
 
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		app.NewTemplatingEngine().
@@ -69,7 +66,8 @@ func handlerHome(app gotuna.App) http.Handler {
 }
 
 func handlerAbout(app gotuna.App) http.Handler {
-	mainContent := osm.MustReadFile(flags.aboutContentFile)
+	md := filepath.Join(flags.pagesDir, "ABOUT.md")
+	mainContent := osm.MustReadFile(md)
 
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		app.NewTemplatingEngine().
@@ -79,7 +77,8 @@ func handlerAbout(app gotuna.App) http.Handler {
 }
 
 func handlerGor(app gotuna.App) http.Handler {
-	mainContent := osm.MustReadFile(flags.gorContentFile)
+	md := filepath.Join(flags.pagesDir, "GOR.md")
+	mainContent := osm.MustReadFile(md)
 
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		app.NewTemplatingEngine().
@@ -90,7 +89,7 @@ func handlerGor(app gotuna.App) http.Handler {
 
 func handlerRedirect(app gotuna.App) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		http.Redirect(w, r, "https://test2.gno.land"+r.URL.Path, http.StatusFound)
+		http.Redirect(w, r, "https://test3.gno.land"+r.URL.Path, http.StatusFound)
 	})
 }
 
