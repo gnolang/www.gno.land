@@ -1,6 +1,10 @@
 @import url("../font/font.css");
 
-
+html{
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
 
 html,
 body {
@@ -149,6 +153,7 @@ pre {
 #mc_embed_signup {
     padding: 22px;
     background-color: #fff;
+    padding: 2em 22px 2em 22px;
 }
 
 #mc_embed_signup_scroll {
@@ -160,7 +165,8 @@ pre {
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex: 1
+    flex: 1;
+    margin-top: 2em;
 }
 
 #mc_embed_signup .mc-field-group label {
@@ -262,6 +268,8 @@ pre {
     display: inline-block;
     background-color: #fff;
     border: 1px solid #000;
+    min-width: 6rem;
+    text-align: center;
 }
 
 #footer .social-black a {

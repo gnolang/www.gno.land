@@ -5,7 +5,7 @@ Using an interpreted version of the general-purpose programming language Golang 
 Web2 developers can easily contribute to web3 and start building a more transparent accountable world.
 
 The Gno transaction token GNOT and the contributor memberships power the platform, which runs on a variation of Proof of Stake.
-Proof of Contribution rewards contributors (GNOSH holders) from technical and non-technical backgrounds, fairly and for life with GNOT.
+Proof of Contribution rewards contributors from technical and non-technical backgrounds, fairly and for life with GNOT.
 This consensus mechanism also achieves higher security with fewer validators, optimizing resources for a greener, more sustainable, and enduring blockchain ecosystem.
 
 Any blockchain using Gnolang achieves succinctness, composability, expressivity, and completeness not found in any other smart contract platform.
