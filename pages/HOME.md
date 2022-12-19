@@ -1,10 +1,10 @@
 # Welcome to **Gno.land**
 
- * [About Gno.land](https://www.gno.land/about)
+ * [About Gno.land](/about)
  * [Blogs](https://test3.gno.land/r/gnoland/blog)
  * [Install `gnokey`](https://github.com/gnolang/gno/)
  * [Acquire testnet tokens](https://test3.gno.land/faucet)
- * [Game of Realms](https://www.gno.land/game-of-realms) - An open worldwide competition for developers to build the best Gnolang smart-contracts.
+ * [Game of Realms](/game-of-realms) - An open worldwide competition for developers to build the best Gnolang smart-contracts.
 
 # Explore new packages.
 
@@ -47,6 +47,7 @@ Check out our [community projects](https://github.com/gnolang/awesome-gno).
 Official channel: [Discord](https://discord.gg/S8nKUqwkPn)<br />
 Other channels: [Telegram](https://t.me/gnoland) [Twitter](https://twitter.com/_gnoland)
 
+<!-- mailchimp -->
 <div id="mc_embed_signup">
 <form action="https://land.us18.list-manage.com/subscribe/post?u=8befe3303cf82796d2c1a1aff&amp;id=271812000b&amp;f_id=009170e7f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
   <label for="mce-EMAIL">Subscribe by email:</label>
@@ -64,3 +65,4 @@ Other channels: [Telegram](https://t.me/gnoland) [Twitter](https://twitter.com/_
   </div>
 </form>
 </div>
+<!-- /mailchimp -->
