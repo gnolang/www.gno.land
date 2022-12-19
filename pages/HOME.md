@@ -4,7 +4,7 @@
  * [Blogs](https://test3.gno.land/r/gnoland/blog)
  * [Install `gnokey`](https://github.com/gnolang/gno/)
  * [Acquire testnet tokens](https://test3.gno.land/faucet)
- * [Game of Realms](https://test3.gno.land/game-of-realms) - An open worldwide competition for developers to build the best Gnolang smart-contracts.
+ * [Game of Realms](https://www.gno.land/game-of-realms) - An open worldwide competition for developers to build the best Gnolang smart-contracts.
 
 # Explore new packages.
 
