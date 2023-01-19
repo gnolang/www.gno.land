@@ -46,7 +46,7 @@ Package names are not guaranteed to be available for production.
 Check out our [community projects](https://github.com/gnolang/awesome-gno).
 
 Official channel: [Discord](https://discord.gg/S8nKUqwkPn)<br />
-Other channels: [Telegram](https://t.me/gnoland) [Twitter](https://twitter.com/_gnoland)
+Other channels: [Telegram](https://t.me/gnoland) [Twitter](https://twitter.com/_gnoland) [Youtube](https://www.youtube.com/@_gnoland)
 
 <!-- mailchimp -->
 <div id="mc_embed_signup">
