@@ -1,1 +1,1 @@
-# <a href="https://www.gno.land/">www.gno.land</a>
+# [www.gno.land](https://www.gno.land/)
