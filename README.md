@@ -1,1 +1,3 @@
-# [www.gno.land](https://www.gno.land/)
+# www.gno.land
+
+* https://www.gno.land/
