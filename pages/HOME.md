@@ -1,69 +1,88 @@
-# Welcome to **Gno.land**
+# Welcome to Gno.land
 
- * [About Gno.land](/about)
- * [Blogs](https://test3.gno.land/r/gnoland/blog)
- * [Install `gnokey`](https://github.com/gnolang/gno/)
- * [Acquire testnet tokens](https://test3.gno.land/faucet)
- * [Game of Realms](/game-of-realms) - An open worldwide competition for developers to build the best Gnolang smart-contracts.
+---
 
-# Explore new packages.
+## An interpretation of the Golang (Go) programming language for advanced developers and intrepid pioneers to build succinct, composable smart contracts for social coordination.
 
-* r/gnoland
-  * [/r/gnoland/blog](https://test3.gno.land/r/gnoland/blog)
-  * [/r/gnoland/faucet](https://test3.gno.land/r/gnoland/faucet)
-* r/system
-  * [/r/system/names](https://test3.gno.land/r/system/names)
-  * [/r/system/rewards](https://test3.gno.land/r/system/rewards)
-  * [/r/system/validators](https://test3.gno.land/r/system/validators)
-* r/demo
-  * [/r/demo/banktest](https://test3.gno.land/r/demo/banktest)
-  * [/r/demo/boards](https://test3.gno.land/r/demo/boards)
-  * [/r/demo/foo20](https://test3.gno.land/r/demo/foo20)
-  * [/r/demo/nft](https://test3.gno.land/r/demo/nft)
-  * [/r/demo/types](https://test3.gno.land/r/demo/types)
-  * [/r/demo/users](https://test3.gno.land/r/demo/users)
-* p/demo
-  * [/p/demo/avl](https://test3.gno.land/p/demo/avl)
-  * [/p/demo/blog](https://test3.gno.land/p/demo/blog)
-  * [/p/demo/flow](https://test3.gno.land/p/demo/flow)
-  * [/p/demo/gnode](https://test3.gno.land/p/demo/gnode)
-  * [/p/demo/grc/exts](https://test3.gno.land/p/demo/grc/exts)
-  * [/p/demo/grc/grc20](https://test3.gno.land/p/demo/grc/grc20)
-  * [/p/demo/grc/grc721](https://test3.gno.land/p/demo/grc/grc721)
+If you’re concerned about information censorship and want to contribute to the #GnoWorldOrder, follow our socials to find out how.
 
-# Other Testnets
+Gno.land is in building mode. If you want to help lay the foundations of a fairer and freer world through innovative ideas and exceptional code, join us today.
 
-   * **[staging.gno.land](https://staging.gno.land) (wiped every commit to master)**
-   * _[test3.gno.land](https://test3.gno.land) (latest)_
-   * _[test2.gno.land](https://test2.gno.land) (archive)_
-   * _[test1.gno.land](https://test1.gno.land) (archive)_
+<div class="stack">
 
-**This is a testnet.**
-Package names are not guaranteed to be available for production.
+[About Gno.land](/about)
+[Explore Github repo](https://github.com/gnolang)
 
-# Social
+</div><!-- end stack-->
 
-Check out our [community projects](https://github.com/gnolang/awesome-gno).
+<div class="jumbotron">
 
-Official channel: [Discord](https://discord.gg/S8nKUqwkPn)<br />
-Other channels: [Telegram](https://t.me/gnoland) [Twitter](https://twitter.com/_gnoland) [Youtube](https://www.youtube.com/@_gnoland)
+### Game of Realms
 
-<!-- mailchimp -->
-<div id="mc_embed_signup">
-<form action="https://land.us18.list-manage.com/subscribe/post?u=8befe3303cf82796d2c1a1aff&amp;id=271812000b&amp;f_id=009170e7f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
-  <label for="mce-EMAIL">Subscribe by email:</label>
-  <div id="mc_embed_signup_scroll">
-  	<div class="mc-field-group">
-  		<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Type your email here" required>
-  		<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-  		<span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
-  	</div>
-  	<div id="mce-responses" class="clear">
-  		<div class="response" id="mce-error-response" style="display:none"></div>
-  		<div class="response" id="mce-success-response" style="display:none"></div>
-  	</div>
-  	<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8befe3303cf82796d2c1a1aff_271812000b" tabindex="-1" value=""></div>
-  </div>
-</form>
-</div>
-<!-- /mailchimp -->
+The first high-stakes contest will see participants compete for tiered membership to co-own the Gno.land blockchain. A series of complex technical and non-technical tasks will challenge contributors to create innovative patterns that push the chain to new limits. Start building the foundation for tomorrow through key smart contracts and other contributions that change our understanding of the world.
+
+<div class="stack">
+
+[Join Game Of Realms](/game-of-realms)
+
+</div><!-- end stack-->
+</div><!-- end jumbotron-->
+
+### Fund and Grants Program
+
+Are you a builder, tinkerer, or researcher? If you’re looking to create awesome dApps, tooling, infrastructure, or smart contract libraries on Gno.land, you can apply for a grant. The Gno.land Ecosystem Fund and Grants program provides financial contributions for individuals and teams to innovate on the platform.
+
+<div class="stack">
+
+[More information here](https://github.com/gnolang/ecosystem-fund-grants)
+
+</div><!-- end stack-->
+
+<div class="columns-3">
+<div class="column">
+
+### Learn about Gno.land
+
+- [About](/about)
+- [Subscribe](#subscribe)
+- [Tokenomics (soon)](#)
+- [Blogs](/r/gnoland/blog)
+- [Events](/events)
+- [Partners (soon)](#)
+
+</div><!-- end column-->
+
+<div class="column">
+
+### Build with Gnolang
+
+- [Gno dev with CLI (soon)](#)
+- [Gno ecosystem](/ecosystem)
+- [Test in the browser (soon)](#)
+- [About the Gnolang Language](/gno-language)
+- [Docs/ Tutorials](https://github.com/gnolang)
+- [Gno by example](https://gno-by-example.com/)
+- [Getting started video (soon)](#)
+
+</div><!-- end column-->
+<div class="column">
+
+### Explore the universe
+
+- [Discover demo packages](https://github.com/gnolang/gno/tree/master/examples)
+- [Install Gno Key instructions](/r/demo/boards:testboard/5)
+- [Other Testnets](https://test2.gno.land/)
+- [Explorer links(soon)](#)
+- [Testnet Tokens (faucet)](https://test3.gno.land/faucet)
+
+</div><!-- end column-->
+</div><!-- end column-3-->
+
+---
+
+### Socials
+
+- ![Discord](static/img/ico-discord.svg) [Discord](https://discord.gg/S8nKUqwkPn)
+- ![Twitter](static/img/ico-twitter.svg) [Twitter](https://twitter.com/_gnoland)
+- ![Youtube](static/img/ico-youtube.svg) [Youtube](https://www.youtube.com/@_gnoland)
+- ![Telegram](static/img/ico-telegram.svg) [Telegram](https://t.me/gnoland)
