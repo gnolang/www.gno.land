@@ -90,8 +90,8 @@ func handlerEvents(app gotuna.App) http.Handler {
 
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		app.NewTemplatingEngine().
-			Set("Title", "Gno.land Is A Platform To Write Smart Contracts In Gnolang (Gno)").
-			Set("Description", "On Gno.land, developers write smart contracts and other blockchain apps using Gnolang (Gno) without learning a language that’s exclusive to a single ecosystem.").
+			Set("Title", "Gno.land Core Team Attends Industry Events & Meetups").
+			Set("Description", " If you’re interested in learning more about Gno.land, you can join us at major blockchain industry events throughout the year either in person or virtually.").
 			Set("MainContent", string(mainContent)).
 			Render(w, r, "generic.html", "funcs.html")
 	})
