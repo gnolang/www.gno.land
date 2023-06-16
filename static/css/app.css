@@ -226,6 +226,7 @@ input {
   color: var(--text-color, #000);
   width: 25em;
   padding: 0.4rem 0.5rem;
+  max-width: 100%;x
 }
 
 blockquote {
@@ -273,17 +274,21 @@ code {
   justify-content: space-between;
 }
 
-.stack {
-  display: flex;
-  margin: 2rem 0;
-}
 
-.stack *:not(:first-child) {
-  margin-left: 3.75rem;
+
+.stack,
+.stack > p {
+    display: flex;
+    flex-direction: column;
 }
 
 .stack > p {
   margin: 0;
+}
+
+.stack > a,
+.stack > p > a{
+    margin-block-end: 0.4rem;
 }
 
 .columns-2,
@@ -306,6 +311,17 @@ code {
 
 /** 51.2rem **/
 @media screen and (min-width: 68.75rem) {
+  .stack,
+  .stack > p {
+    flex-direction:  row;
+  }
+  .stack *:not(:first-child) {
+    margin-left: 3.75rem;
+  }
+  .stack > a,
+  .stack > p > a{
+    margin-block-end: 0;
+  }
   .columns-2 {
     grid-template-columns: repeat(2, 1fr);
   }
