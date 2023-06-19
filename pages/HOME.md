@@ -14,7 +14,6 @@ Gno.land is in building mode. If you want to help lay the foundations of a faire
 [Explore Github repo](https://github.com/gnolang)
 
 </div><!-- end stack-->
-
 <div class="jumbotron">
 
 ### Game of Realms
@@ -76,7 +75,7 @@ Are you a builder, tinkerer, or researcher? If you’re looking to create awesom
 - [Testnet Tokens (faucet)](https://test3.gno.land/faucet)
 
 </div><!-- end column-->
-</div><!-- end column-3-->
+</div><!-- end columns-3-->
 
 ---
 

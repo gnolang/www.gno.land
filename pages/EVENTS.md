@@ -8,31 +8,7 @@ If you’re interested in building web3 with us, catch up with Gno.land in perso
 
 <div class="columns-3">
 
-<div>
-
-### Eth Seoul
-
-- **The Evolution of Smart Contracts: A Journey into Gno.land**
-- Seoul, June 3, 2023
-- Manfred Touron
-
-[Learn more](https://2023.ethseoul.org/)
-
-</div>
-
-<div>
-
-### BUIDL Asia
-
-- **Proof of Contribution in Gno.land**
-- Seoul, June 6, 2023
-- Manfred Touron
-
-[Learn more](https://www.buidl.asia/)
-
-</div>
-
-<div>
+<div class="column">
 
 ### EthCC
 
@@ -42,8 +18,8 @@ If you’re interested in building web3 with us, catch up with Gno.land in perso
 
 [Learn more](https://www.ethcc.io/)
 
-</div>
-</div>
+</div><!-- end column-->
+</div><!-- end columns-3-->
 
 ---
 
@@ -51,7 +27,29 @@ If you’re interested in building web3 with us, catch up with Gno.land in perso
 
 <div class="columns-3">
 
-<div>
+<div class="column">
+
+### Eth Seoul
+
+- **The Evolution of Smart Contracts: A Journey into Gno.land**
+- Seoul, June 3, 2023
+- Manfred Touron
+
+[Learn more](https://2023.ethseoul.org/)
+
+</div><!-- end column-->
+<div class="column">
+
+### BUIDL Asia
+
+- **Proof of Contribution in Gno.land**
+- Seoul, June 6, 2023
+- Manfred Touron
+
+[Learn more](https://www.buidl.asia/)
+
+</div><!-- end column-->
+<div class="column">
 
 ### Game Developer Conference
 
@@ -61,9 +59,8 @@ If you’re interested in building web3 with us, catch up with Gno.land in perso
 
 [Watch the talk](https://www.youtube.com/watch?v=IJ0xel8lr4c)
 
-</div>
-
-<div>
+</div><!-- end column-->
+<div class="column">
 
 ### EthDenver
 
@@ -73,8 +70,8 @@ If you’re interested in building web3 with us, catch up with Gno.land in perso
 
 [Watch the talk](https://www.youtube.com/watch?v=IJ0xel8lr4c)
 
-</div>
-<div>
+</div><!-- end column-->
+<div class="column">
 
 ### Istanbul Blockchain Week
 
@@ -83,16 +80,16 @@ If you’re interested in building web3 with us, catch up with Gno.land in perso
 
 [Watch the talk](https://www.youtube.com/watch?v=JX0gdWT0Cg4)
 
-</div>
-<div>
+</div><!-- end column-->
+<div class="column">
 
 ### Web Summit Buckle Up and Build with Cosmos
 
 - Lisbon, Nov 1 - 4, 2022
 - Manfred Touron
 
-</div>
-<div>
+</div><!-- end column-->
+<div class="column">
 
 ### Cosmoverse
 
@@ -101,8 +98,8 @@ If you’re interested in building web3 with us, catch up with Gno.land in perso
 
 [Watch the talk](https://www.youtube.com/watch?v=6s1zG7hgxMk)
 
-</div>
-<div>
+</div><!-- end column-->
+<div class="column">
 
 ### Berlin Blockchain Week Buckle Up and Build with Cosmos
 
@@ -110,5 +107,5 @@ If you’re interested in building web3 with us, catch up with Gno.land in perso
 
 [Watch the talk](https://www.youtube.com/watch?v=hCLErPgnavI)
 
-</div>
-</div>
+</div><!-- end column-->
+</div><!-- end columns-3-->
