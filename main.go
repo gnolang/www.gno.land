@@ -43,7 +43,7 @@ func main() {
 	app.Router.Handle("/about", handlerAbout(app))
 	app.Router.Handle("/game-of-realms", handlerGor(app))
 	app.Router.Handle("/events", handlerEvents(app))
-	app.Router.Handle("/gno-language", handlerLanguage(app))
+	app.Router.Handle("/gnolang", handlerLanguage(app))
 	app.Router.Handle("/ecosystem", handlerEcosystem(app))
 	app.Router.Handle("/r/{path:.*}", handlerRedirect(app))
 	app.Router.Handle("/p/{path:.*}", handlerRedirect(app))

@@ -45,7 +45,7 @@ Are you a builder, tinkerer, or researcher? If you’re looking to create awesom
 - [About](/about)
 - [Subscribe](#subscribe)
 - [Tokenomics (soon)](#)
-- [Blogs](/r/gnoland/blog)
+- [Blog](/r/gnoland/blog)
 - [Events](/events)
 - [Partners (soon)](#)
 
