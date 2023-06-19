@@ -70,7 +70,8 @@ Are you a builder, tinkerer, or researcher? If you’re looking to create awesom
 
 - [Discover demo packages](https://github.com/gnolang/gno/tree/master/examples)
 - [Install Gno Key instructions](/r/demo/boards:testboard/5)
-- [Other Testnets](https://test2.gno.land/)
+- [Testnets 3](https://test3.gno.land/)
+- [Testnets 2](https://test2.gno.land/)
 - [Explorer links(soon)](#)
 - [Testnet Tokens (faucet)](https://test3.gno.land/faucet)
 
