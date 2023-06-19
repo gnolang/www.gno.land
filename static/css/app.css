@@ -81,9 +81,8 @@ html[data-theme="dark"] .footer img {
 }
 
 #theme-toggle {
-  height: 2rem;
-  width: 2rem;
   display: inline-block;
+  padding: 0;
 }
 
 html[data-theme="dark"] #theme-toggle-moon,
@@ -610,6 +609,8 @@ code {
   position: absolute;
   left: 1.467rem;
   display: flex;
+  align-items: center;
+  margin-block-start: .7em;
   color: var(--icon-color, #000);
 }
 
