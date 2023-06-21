@@ -105,8 +105,8 @@ func handlerLanguage(app gotuna.App) http.Handler {
 
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		app.NewTemplatingEngine().
-			Set("Title", "Gno language").
-			Set("Description", "Gno language").
+			Set("Title", "Gnolang (Gno) Is a Complete Language for Blockchain").
+			Set("Description", "Gnolang (Gno) is an interpretation of the popular Golang (Go) language for blockchain created by Tendermint and Cosmos founder Jae Kwon.").
 			Set("MainContent", string(mainContent)).
 			Render(w, r, "generic.html", "funcs.html")
 	})
@@ -118,8 +118,8 @@ func handlerEcosystem(app gotuna.App) http.Handler {
 
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		app.NewTemplatingEngine().
-			Set("Title", "Gno Ecosystem").
-			Set("Description", "Gno Ecosystem").
+			Set("Title", "Discover Gno.land Ecosystem Projects & Initiatives").
+			Set("Description", "Dive further into the Gno.land ecosystem and discover the core infrastructure, projects, smart contracts, and tooling we’re building.").
 			Set("MainContent", string(mainContent)).
 			Render(w, r, "generic.html", "funcs.html")
 	})

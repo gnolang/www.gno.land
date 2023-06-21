@@ -7,7 +7,6 @@ If you’re interested in building web3 with us, catch up with Gno.land in perso
 ## Upcoming Events
 
 <div class="columns-3">
-
 <div class="column">
 
 ### EthCC
@@ -17,6 +16,37 @@ If you’re interested in building web3 with us, catch up with Gno.land in perso
 - Manfred Touron
 
 [Learn more](https://www.ethcc.io/)
+
+</div><!-- end column-->
+<div class="column">
+
+### Nebular Summit — Gno.land for Developers
+
+- Paris, July 24 - 25, 2023
+- Manfred Touron
+
+[Learn more](https://www.nebular.builders/)
+
+</div><!-- end column-->
+<div class="column">
+
+### GopherCon EU
+
+- **Come Meet Us at our Booth**
+- Berlin, July 26 - 29, 2023
+
+[Learn more](https://gophercon.eu/)
+
+</div><!-- end column-->
+
+<div class="column">
+
+### GopherCon US
+
+- **Come Meet Us at our Booth**
+- San Diego, September 26 - 29, 2023
+
+[Learn more](https://www.gophercon.com/)
 
 </div><!-- end column-->
 </div><!-- end columns-3-->

@@ -58,7 +58,7 @@ Are you a builder, tinkerer, or researcher? If you’re looking to create awesom
 - [Gno dev with CLI (soon)](#)
 - [Explore the Universe](/ecosystem)
 - [Test in the browser (soon)](#)
-- [About the Gnolang Language](/gno-language)
+- [About the Gnolang Language](/gnolang)
 - [Docs/ Tutorials](https://github.com/gnolang)
 - [Gno by example](https://gno-by-example.com/)
 - [Getting started video (soon)](#)
