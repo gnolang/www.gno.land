@@ -20,7 +20,7 @@ If you’re interested in building web3 with us, catch up with Gno.land in perso
 </div><!-- end column-->
 <div class="column">
 
-### Nebular Summit — Gno.land for Developers
+### Nebular Summit Gno.land for Developers
 
 - Paris, July 24 - 25, 2023
 - Manfred Touron

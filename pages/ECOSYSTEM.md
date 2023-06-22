@@ -8,9 +8,13 @@ Gno IDE is a web-based application helping builders quickly spin up Gno realms a
 
 Developed by the Onbloc team, Gnoscan is Gno.land’s blockchain explorer. Anyone can use Gnoscan to easily find information that resides on the Gno.land blockchain, such as wallet addresses, TX hashes, blocks, and contracts. Gnoscan makes our on-chain data easy to read and intuitive to discover.
 
+[Learn more](https://gnoscan.io/)
+
 ## Adena
 
 Adena is a user-friendly non-custodial wallet for Gno.land. Open-source and developed by Onbloc, Adena currently powers all transactions on Gno.land, allowing gnomes to interact easily with the chain. With an emphasis on UX, Adena is built to handle millions of realms and tokens with a high-quality interface, support for NFTs and custom tokens, and seamless integration.
+
+[Learn more](https://adena.app/)
 
 ## Gnoswap
 
