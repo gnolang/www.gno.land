@@ -181,6 +181,9 @@ class Tabs {
  *   ### INIT COMPONENTS ###
  */
 
+const parsed = parseContent(document.getElementById("source").innerHTML);
+console.log("markdown");
+
 window.addEventListener("load", function () {
   const accordions = Array.from(document.querySelectorAll(".accordion-trigger"));
   for (let accordion of accordions) {

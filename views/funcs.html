@@ -19,11 +19,11 @@
 
         <div class="buttons">
           <a href="https://github.com/gnolang/gno">
-            <img src="/static/img/ico-github.svg" alt="GitHub" />
+            <img src="/static/img/ico-github.svg" alt="GitHub" width="32" height="32" />
           </a>
           <button title="Toggle dark mode" id="theme-toggle">
-            <img src="/static/img/ico-sun.svg" id="theme-toggle-sun" alt="light theme" />
-            <img src="/static/img/ico-moon.svg" id="theme-toggle-moon" alt="dark theme" />
+            <img src="/static/img/ico-sun.svg" id="theme-toggle-sun" alt="light theme" width="32" height="32" />
+            <img src="/static/img/ico-moon.svg" id="theme-toggle-moon" alt="dark theme" width="32" height="32" />
           </button>
         </div>
       </div>
@@ -32,15 +32,15 @@
 </div>
 {{ end }} {{ define "html_head" }}
 <meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="preload" as="script" href="/static/js/marked.min.js" />
+<link rel="preload" as="script" href="/static/js/renderer.js" />
+<link rel="preload" rel="preload" href="/static/font/roboto/RobotoMono-Regular.woff" as="font" type="font/woff" />
 <link rel="stylesheet" href="/static/css/normalize.css" />
 <link rel="stylesheet" href="/static/css/app.css" />
 <noscript>
   <style type="text/css">
     #source {
-      display: block;
-    }
-    #theme-toggle {
-      display: none;
+      opacity: 1;
     }
   </style>
 </noscript>
@@ -73,11 +73,11 @@
 </script>
 {{ end }} {{ define "header_logo" }}
 <a id="logo" href="/">
-  <img src="/static/img/logo.png" alt="Gno.land" title="Gno.land" height="38" />
+  <img src="/static/img/logo.png" alt="Gno.land" title="Gno.land" height="38" width="165.48" />
 </a>
 {{ end }} {{ define "footer" }}
 <footer class="footer">
-  <img src="/static/img/logo.png" alt="Gno.land" width="70" />
+  <img src="/static/img/logo.png" alt="Gno.land" width="70" height="16.97" />
 </footer>
 {{ end }} {{ define "js" }}
 <script type="text/javascript" src="/static/js/marked.min.js"></script>
@@ -85,7 +85,6 @@
 <script type="text/javascript" src="/static/js/renderer.js"></script>
 <script type="text/javascript">
   function main() {
-    const parsed = parseContent(document.getElementById("source").innerHTML);
     const DOM = {
       home: document.getElementById("home"),
     };
