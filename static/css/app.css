@@ -1,4 +1,37 @@
-@import url("../font/font.css");
+/**** ROBOTO ****/
+
+@font-face {
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: local("Roboto Mono Regular"), url("/static/font/roboto/RobotoMono-Regular.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Roboto Mono";
+    font-style: italic;
+    font-weight: normal;
+    font-display: swap;
+    src: local("Roboto Mono Italic"), url("/static/font/roboto/RobotoMono-Italic.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Roboto Mono Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Roboto Mono Bold"), url("/static/font/roboto/RobotoMono-Bold.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Roboto Mono";
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Roboto Mono Bold Italic"), url("/static/font/roboto/RobotoMono-BoldItalic.woff") format("woff");
+  }
+  
 
 /*** DARK/LIGHT THEME COLORS ***/
 
