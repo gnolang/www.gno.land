@@ -1,36 +1,130 @@
 {{ define "header_buttons" }}
 <div id="header_buttons">
-    <a href="https://github.com/gnolang/gno"><img src="/static/img/github-mark-32px.png" alt="Github"/></a>
+  <nav role="navigation">
+    <div id="menu-toggle">
+      <input type="checkbox" />
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <div class="navigation">
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/r/gnoland/blog">Blog</a></li>
+          <li><a href="/r/demo/boards:testboard/5">Install</a></li>
+          <li><a href="https://test3.gno.land/">Testnet</a></li>
+          <li><a href="/game-of-realms">Game of Realms</a></li>
+        </ul>
+
+        <div class="buttons">
+          <a href="https://github.com/gnolang/gno">
+            <img src="/static/img/ico-github.svg" alt="GitHub" width="32" height="32" />
+          </a>
+          <button title="Toggle dark mode" id="theme-toggle">
+            <img src="/static/img/ico-sun.svg" id="theme-toggle-sun" alt="light theme" width="32" height="32" />
+            <img src="/static/img/ico-moon.svg" id="theme-toggle-moon" alt="dark theme" width="32" height="32" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
 </div>
-{{ end }}
+{{ end }} {{ define "html_head" }}
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="preload" as="script" href="/static/js/marked.min.js" />
+<link rel="preload" as="script" href="/static/js/renderer.js" />
+<link rel="preload" rel="preload" href="/static/font/roboto/RobotoMono-Regular.woff" as="font" type="font/woff" />
+<link rel="stylesheet" href="/static/css/normalize.css" />
+<link rel="stylesheet" href="/static/css/app.min.css" />
+<noscript>
+  <style type="text/css">
+    #source {
+      opacity: 1;
+    }
+  </style>
+</noscript>
+<script>
+  (function () {
+    const storageKey = "website_theme";
+    const themeDark = "dark";
+    const themeLight = "light";
 
-{{ define "header_logo" }}
-  <a id="logo" href="/"><img src="/static/img/logo.png" alt="Gno.land" title="Gno.land" height="38" /></a>
-{{ end }}
-
-{{ define "footer" }}
-  <hr />
-  <div id="footer">
-  </div>
-{{ end }}
-
-{{ define "js" }}
-  <script type="text/javascript" src="/static/js/marked.min.js"></script>
-  <script type="text/javascript" src="/static/js/purify.min.js"></script>
-  <script type="text/javascript">
-    function main() {
-        marked.setOptions({gfm:true});
-        window.contents = document.getElementById("source").innerHTML;
-        var doc = new DOMParser().parseFromString(window.contents, "text/html");
-        var contents = doc.documentElement.textContent
-        var parsed = marked.parse(contents);
-        document.getElementById("home").innerHTML = DOMPurify.sanitize(parsed, { USE_PROFILES: { html: true } });
+    function getColorPreference() {
+      if (localStorage.getItem(storageKey)) return localStorage.getItem(storageKey);
+      return window.matchMedia("(prefers-color-scheme: dark)").matches ? themeDark : themeLight;
+    }
+    function setTheme(value) {
+      document.firstElementChild.setAttribute("data-theme", value);
+    }
+    setTheme(getColorPreference());
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function (e) {
+      if (!localStorage.getItem(storageKey)) setTheme(e.matches ? themeDark : themeLight);
+    });
+    window.addEventListener("load", function () {
+      document.getElementById("theme-toggle").addEventListener("click", function (e) {
+        e.preventDefault();
+        const newValue = getColorPreference() === themeLight ? themeDark : themeLight;
+        localStorage.setItem(storageKey, newValue);
+        setTheme(newValue);
+      });
+    });
+  })();
+</script>
+{{ end }} {{ define "header_logo" }}
+<a id="logo" href="/">
+  <img src="/static/img/logo.png" alt="Gno.land" title="Gno.land" height="38" width="165.48" />
+</a>
+{{ end }} {{ define "footer" }}
+<footer class="footer">
+  <img src="/static/img/logo.png" alt="Gno.land" width="70" height="16.97" />
+</footer>
+{{ end }} {{ define "js" }}
+<script type="text/javascript" src="/static/js/marked.min.js"></script>
+<script type="text/javascript" src="/static/js/purify.min.js"></script>
+<script type="text/javascript" src="/static/js/renderer.js"></script>
+<script type="text/javascript">
+  function main() {
+    const DOM = {
+      home: document.getElementById("home"),
     };
-  </script>
-{{ end }}
 
-{{define "html_head"}}
-      <meta name="viewport" content="width=device-width,initial-scale=1" />
-      <link rel="stylesheet" href="/static/css/app.css" />
-      <link rel="stylesheet" href="/static/css/normalize.css" />
+    for (const [key, el] of Object.entries(DOM)) {
+      if (el !== null) {
+        el.innerHTML = DOMPurify.sanitize(parsed, {
+          USE_PROFILES: { html: true },
+        });
+      }
+    }
+  }
+</script>
+{{ end }} {{ define "subscribe" }}
+<!-- mailchimp -->
+<div id="mc_embed_signup" class="container">
+  <form
+    action="https://land.us18.list-manage.com/subscribe/post?u=8befe3303cf82796d2c1a1aff&amp;id=271812000b&amp;f_id=009170e7f0"
+    method="post"
+    id="mc-embedded-subscribe-form"
+    name="mc-embedded-subscribe-form"
+    class="validate"
+    target="_self"
+  >
+    <label for="mce-EMAIL"><img src="/static/img/ico-email.svg" alt="email" /><span>Subscribe by email:</span></label>
+    <div id="mc_embed_signup_scroll">
+      <div class="mc-field-group">
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Type your email here" required />
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" />
+        <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+      </div>
+      <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display: none"></div>
+        <div class="response" id="mce-success-response" style="display: none"></div>
+      </div>
+      <div style="position: absolute; left: -5000px" aria-hidden="true">
+        <input type="text" name="b_8befe3303cf82796d2c1a1aff_271812000b" tabindex="-1" value="" />
+      </div>
+    </div>
+  </form>
+</div>
+<!-- /mailchimp -->
 {{ end }}

@@ -42,6 +42,9 @@ func main() {
 	app.Router.Handle("/", handlerHome(app))
 	app.Router.Handle("/about", handlerAbout(app))
 	app.Router.Handle("/game-of-realms", handlerGor(app))
+	app.Router.Handle("/events", handlerEvents(app))
+	app.Router.Handle("/gnolang", handlerLanguage(app))
+	app.Router.Handle("/ecosystem", handlerEcosystem(app))
 	app.Router.Handle("/r/{path:.*}", handlerRedirect(app))
 	app.Router.Handle("/p/{path:.*}", handlerRedirect(app))
 	app.Router.Handle("/static/{path:.+}", handlerStaticFile(app))
@@ -54,13 +57,16 @@ func main() {
 	}
 }
 
+
 func handlerHome(app gotuna.App) http.Handler {
 	md := filepath.Join(flags.pagesDir, "HOME.md")
-	mainContent := osm.MustReadFile(md)
+	homeContent := osm.MustReadFile(md)
 
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		app.NewTemplatingEngine().
-			Set("MainContent", string(mainContent)).
+			Set("Title", "Gno.land Smart Contract Platform Using Gnolang (Gno)").
+			Set("Description", "Gno.land is the only smart contract platform using the Gnolang (Gno) programming language, an interpretation of the widely-used Golang (Go).").
+			Set("HomeContent", string(homeContent)).
 			Render(w, r, "home.html", "funcs.html")
 	})
 }
@@ -71,8 +77,51 @@ func handlerAbout(app gotuna.App) http.Handler {
 
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		app.NewTemplatingEngine().
+			Set("Title", "Gno.land Is A Platform To Write Smart Contracts In Gnolang (Gno)").
+			Set("Description", "On Gno.land, developers write smart contracts and other blockchain apps using Gnolang (Gno) without learning a language that’s exclusive to a single ecosystem.").
 			Set("MainContent", string(mainContent)).
-			Render(w, r, "about.html", "funcs.html")
+			Render(w, r, "generic.html", "funcs.html")
+	})
+}
+
+func handlerEvents(app gotuna.App) http.Handler {
+	md := filepath.Join(flags.pagesDir, "EVENTS.md")
+	mainContent := osm.MustReadFile(md)
+
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		app.NewTemplatingEngine().
+			Set("Title", "Gno.land Core Team Attends Industry Events & Meetups").
+			Set("Description", " If you’re interested in learning more about Gno.land, you can join us at major blockchain industry events throughout the year either in person or virtually.").
+			Set("MainContent", string(mainContent)).
+			Render(w, r, "generic.html", "funcs.html")
+	})
+}
+
+
+
+func handlerLanguage(app gotuna.App) http.Handler {
+	md := filepath.Join(flags.pagesDir, "LANGUAGE.md")
+	mainContent := osm.MustReadFile(md)
+
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		app.NewTemplatingEngine().
+			Set("Title", "Gnolang (Gno) Is a Complete Language for Blockchain").
+			Set("Description", "Gnolang (Gno) is an interpretation of the popular Golang (Go) language for blockchain created by Tendermint and Cosmos founder Jae Kwon.").
+			Set("MainContent", string(mainContent)).
+			Render(w, r, "generic.html", "funcs.html")
+	})
+}
+
+func handlerEcosystem(app gotuna.App) http.Handler {
+	md := filepath.Join(flags.pagesDir, "ECOSYSTEM.md")
+	mainContent := osm.MustReadFile(md)
+
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		app.NewTemplatingEngine().
+			Set("Title", "Discover Gno.land Ecosystem Projects & Initiatives").
+			Set("Description", "Dive further into the Gno.land ecosystem and discover the core infrastructure, projects, smart contracts, and tooling we’re building.").
+			Set("MainContent", string(mainContent)).
+			Render(w, r, "generic.html", "funcs.html")
 	})
 }
 
@@ -83,7 +132,9 @@ func handlerGor(app gotuna.App) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		app.NewTemplatingEngine().
 			Set("MainContent", string(mainContent)).
-			Render(w, r, "gor.html", "funcs.html")
+			Set("Title", "Game of Realms Content For The Best Contributors ").
+			Set("Description", "Game of Realms is the first high-stakes competition held in two phases to find the best contributors to the Gno.land platform with a 133,700 ATOM prize pool.").
+			Render(w, r, "generic.html", "funcs.html")
 	})
 }
 
@@ -133,15 +184,13 @@ func handlerFavicon(app gotuna.App) http.Handler {
 		io.Copy(w, f)
 	})
 }
-
 func handleNotFound(app gotuna.App, path string, w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusNotFound)
 	app.NewTemplatingEngine().
 		Set("title", "Not found").
 		Set("path", path).
-		Render(w, r, "404.html", "header.html")
+		Render(w, r, "404.html", "funcs.html")
 }
-
 func writeError(w http.ResponseWriter, err error) {
 	w.WriteHeader(500)
 	w.Write([]byte(err.Error()))
