@@ -18,15 +18,17 @@ import (
 )
 
 var flags struct {
-	bindAddr string
-	viewsDir string
-	pagesDir string
+	bindAddr      string
+	viewsDir      string
+	pagesDir      string
+	WithAnalytics bool `json:"WithAnalytics"`
 }
 
 func init() {
 	flag.StringVar(&flags.bindAddr, "bind", "127.0.0.1:8888", "server listening address")
 	flag.StringVar(&flags.viewsDir, "views-dir", "./views", "views directory location")
 	flag.StringVar(&flags.pagesDir, "pages-dir", "./pages", "pages directory location")
+	flag.BoolVar(&flags.WithAnalytics, "with-analytics", false, "adds analytics script")
 }
 
 func main() {
@@ -57,7 +59,6 @@ func main() {
 	}
 }
 
-
 func handlerHome(app gotuna.App) http.Handler {
 	md := filepath.Join(flags.pagesDir, "HOME.md")
 	homeContent := osm.MustReadFile(md)
@@ -67,6 +68,7 @@ func handlerHome(app gotuna.App) http.Handler {
 			Set("Title", "Gno.land Smart Contract Platform Using Gnolang (Gno)").
 			Set("Description", "Gno.land is the only smart contract platform using the Gnolang (Gno) programming language, an interpretation of the widely-used Golang (Go).").
 			Set("HomeContent", string(homeContent)).
+			Set("Flags", flags).
 			Render(w, r, "home.html", "funcs.html")
 	})
 }
@@ -79,6 +81,7 @@ func handlerAbout(app gotuna.App) http.Handler {
 		app.NewTemplatingEngine().
 			Set("Title", "Gno.land Is A Platform To Write Smart Contracts In Gnolang (Gno)").
 			Set("Description", "On Gno.land, developers write smart contracts and other blockchain apps using Gnolang (Gno) without learning a language that’s exclusive to a single ecosystem.").
+			Set("Flags", flags).
 			Set("MainContent", string(mainContent)).
 			Render(w, r, "generic.html", "funcs.html")
 	})
@@ -92,12 +95,11 @@ func handlerEvents(app gotuna.App) http.Handler {
 		app.NewTemplatingEngine().
 			Set("Title", "Gno.land Core Team Attends Industry Events & Meetups").
 			Set("Description", " If you’re interested in learning more about Gno.land, you can join us at major blockchain industry events throughout the year either in person or virtually.").
+			Set("Flags", flags).
 			Set("MainContent", string(mainContent)).
 			Render(w, r, "generic.html", "funcs.html")
 	})
 }
-
-
 
 func handlerLanguage(app gotuna.App) http.Handler {
 	md := filepath.Join(flags.pagesDir, "LANGUAGE.md")
@@ -107,6 +109,7 @@ func handlerLanguage(app gotuna.App) http.Handler {
 		app.NewTemplatingEngine().
 			Set("Title", "Gnolang (Gno) Is a Complete Language for Blockchain").
 			Set("Description", "Gnolang (Gno) is an interpretation of the popular Golang (Go) language for blockchain created by Tendermint and Cosmos founder Jae Kwon.").
+			Set("Flags", flags).
 			Set("MainContent", string(mainContent)).
 			Render(w, r, "generic.html", "funcs.html")
 	})
@@ -120,6 +123,7 @@ func handlerEcosystem(app gotuna.App) http.Handler {
 		app.NewTemplatingEngine().
 			Set("Title", "Discover Gno.land Ecosystem Projects & Initiatives").
 			Set("Description", "Dive further into the Gno.land ecosystem and discover the core infrastructure, projects, smart contracts, and tooling we’re building.").
+			Set("Flags", flags).
 			Set("MainContent", string(mainContent)).
 			Render(w, r, "generic.html", "funcs.html")
 	})
@@ -133,6 +137,7 @@ func handlerGor(app gotuna.App) http.Handler {
 		app.NewTemplatingEngine().
 			Set("MainContent", string(mainContent)).
 			Set("Title", "Game of Realms Content For The Best Contributors ").
+			Set("Flags", flags).
 			Set("Description", "Game of Realms is the first high-stakes competition held in two phases to find the best contributors to the Gno.land platform with a 133,700 ATOM prize pool.").
 			Render(w, r, "generic.html", "funcs.html")
 	})
