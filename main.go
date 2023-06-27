@@ -189,6 +189,7 @@ func handlerFavicon(app gotuna.App) http.Handler {
 		io.Copy(w, f)
 	})
 }
+
 func handleNotFound(app gotuna.App, path string, w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusNotFound)
 	app.NewTemplatingEngine().
@@ -196,6 +197,7 @@ func handleNotFound(app gotuna.App, path string, w http.ResponseWriter, r *http.
 		Set("path", path).
 		Render(w, r, "404.html", "funcs.html")
 }
+
 func writeError(w http.ResponseWriter, err error) {
 	w.WriteHeader(500)
 	w.Write([]byte(err.Error()))
