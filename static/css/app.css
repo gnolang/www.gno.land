@@ -176,7 +176,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.467rem;
+  font-size: 1.625rem;
   margin-block: 3.4rem 1.2rem;
   line-height: 1.4;
 }
@@ -317,6 +317,15 @@ code {
 .stack > a,
 .stack > p > a{
     margin-block-end: 0.4rem;
+}
+
+.column > h1,
+.column > h2,
+.column > h3,
+.column > h4,
+.column > h5,
+.column > h6 {
+    margin-block-start: 0;
 }
 
 .columns-2,
@@ -625,7 +634,7 @@ code {
   width: calc(100vw - 2.6rem);
   right: -1.467rem;
   top: -1.467rem;
-  padding: 7.333rem 1.467rem 3.333rem;
+  padding: 7.333rem 1.467rem 4.333rem;
   background: var(--header-background, #d7d9db);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;

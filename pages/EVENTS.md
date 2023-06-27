@@ -9,6 +9,16 @@ If you’re interested in building web3 with us, catch up with Gno.land in perso
 <div class="columns-3">
 <div class="column">
 
+### GopherCon EU
+
+- **Come Meet Us at our Booth**
+- Berlin, June 26 - 29, 2023
+
+[Learn more](https://gophercon.eu/)
+
+</div><!-- end column-->
+<div class="column">
+
 ### EthCC
 
 - **Come Meet Us at our Booth**
@@ -28,17 +38,6 @@ If you’re interested in building web3 with us, catch up with Gno.land in perso
 [Learn more](https://www.nebular.builders/)
 
 </div><!-- end column-->
-<div class="column">
-
-### GopherCon EU
-
-- **Come Meet Us at our Booth**
-- Berlin, July 26 - 29, 2023
-
-[Learn more](https://gophercon.eu/)
-
-</div><!-- end column-->
-
 <div class="column">
 
 ### GopherCon US
