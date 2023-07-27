@@ -9,6 +9,23 @@ If you’re interested in building web3 with us, catch up with Gno.land in perso
 <div class="columns-3">
 <div class="column">
 
+### GopherCon US
+
+- **Come Meet Us at our Booth**
+- San Diego, September 26 - 29, 2023
+
+[Learn more](https://www.gophercon.com/)
+
+</div><!-- end column-->
+</div><!-- end columns-3-->
+
+---
+
+## Past Events
+
+<div class="columns-3">
+<div class="column">
+
 ### GopherCon EU
 
 - **Come Meet Us at our Booth**
@@ -38,23 +55,6 @@ If you’re interested in building web3 with us, catch up with Gno.land in perso
 [Learn more](https://www.nebular.builders/)
 
 </div><!-- end column-->
-<div class="column">
-
-### GopherCon US
-
-- **Come Meet Us at our Booth**
-- San Diego, September 26 - 29, 2023
-
-[Learn more](https://www.gophercon.com/)
-
-</div><!-- end column-->
-</div><!-- end columns-3-->
-
----
-
-## Past Events
-
-<div class="columns-3">
 
 <div class="column">
 
