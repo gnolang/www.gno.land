@@ -10,14 +10,21 @@ If you want to stack ATOM rewards and play a key role in the success of Gno.land
 
 <div role="tablist" aria-labelledby="tablist-1" class="tabs">
 
-## Join the Game of Reamls
+## Join the Game of Realms
+
+---
+
+<div class="columns-2">
+<div class="column">
+
+### Phase I. <span class="is-muted">(Join now)</span>
 
 - <button id="tab-1" type="button" role="tab" aria-selected="true" aria-controls="tabpanel-1">Evaluation DAO Challenge</button> (30% completed)
-
 - <button id="tab-2" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-2" tabindex="-1">Tutorials Challenge</button> (80% completed)
-
 - <button id="tab-3" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-3" tabindex="-1">Governance Module Challenge</button> (25% completed)
 
+</div>
+</div>
 </div>
 
 <div class="jumbotron">
@@ -30,7 +37,7 @@ This complex challenge seeks your skills in DAO development and implementation a
 
 <div class="accordion gor-accordion">
 
-<button type="button" aria-expanded="false" class="accordion-trigger is-muted" aria-controls="acc-1" id="accpanel-1"> &#9745; <span class="is-finished">Clarifying this issue</span> — (100%&nbsp;finished) </button>
+<button type="button" aria-expanded="false" class="accordion-trigger is-muted" aria-controls="acc-1" id="accpanel-1"> ☑&#xFE0E; <span class="is-finished">Clarifying this issue</span> — (100%&nbsp;Completed) </button>
 
 <div id="acc-1" role="region" aria-labelledby="accpanel-1" class="accordion-panel is-hidden">
 </div>
@@ -82,12 +89,12 @@ To progress to phase two of the competition, we need high-quality tutorials, gui
 
 <div class="accordion gor-accordion">
 
-<button type="button" aria-expanded="false" class="accordion-trigger is-muted" aria-controls="acc-8" id="accpanel-8"> &#9745; <span class="is-finished">Clarifying this issue</span> — (100%&nbsp;finished) </button>
+<button type="button" aria-expanded="false" class="accordion-trigger is-muted" aria-controls="acc-8" id="accpanel-8"> ☑&#xFE0E; <span class="is-finished">Clarifying this issue</span> — (100%&nbsp;Completed) </button>
 
 <div id="acc-8" role="region" aria-labelledby="accpanel-8" class="accordion-panel is-hidden">
 </div>
 
-<button type="button" aria-expanded="false" class="accordion-trigger is-muted" aria-controls="acc-9" id="accpanel-9"> &#9745; <span class="is-finished">Retrospectives & investigations</span> — (100%&nbsp;finished)</button>
+<button type="button" aria-expanded="false" class="accordion-trigger is-muted" aria-controls="acc-9" id="accpanel-9"> ☑&#xFE0E; <span class="is-finished">Retrospectives & investigations</span> — (100%&nbsp;Completed)</button>
 
 <div id="acc-9" role="region" aria-labelledby="accpanel-9" class="accordion-panel is-muted is-hidden">
 
@@ -95,7 +102,7 @@ How to create, present, and house the tutorials has been established with produc
 
 </div>
 
-<button type="button" aria-expanded="false" class="accordion-trigger is-muted" aria-controls="acc-10" id="accpanel-10"> &#9745; <span class="is-finished">Human specs — definitions, rules, examples</span> — (100%&nbsp;finished)</button>
+<button type="button" aria-expanded="false" class="accordion-trigger is-muted" aria-controls="acc-10" id="accpanel-10"> ☑&#xFE0E; <span class="is-finished">Human specs — definitions, rules, examples</span> — (100%&nbsp;Completed)</button>
 
 <div id="acc-10" role="region" aria-labelledby="accpanel-10" class="accordion-panel is-muted is-hidden">
 
@@ -103,17 +110,17 @@ We followed a collaborative approach to defining the scope of the work and creat
 
 </div>
 
-<button type="button" aria-expanded="false" class="accordion-trigger is-muted" aria-controls="acc-11" id="accpanel-11"> &#9745; <span class="is-finished">Technical specs and interfaces</span> — (100%&nbsp;finished)</button>
+<button type="button" aria-expanded="false" class="accordion-trigger is-muted" aria-controls="acc-11" id="accpanel-11"> ☑&#xFE0E; <span class="is-finished">Technical specs and interfaces</span> — (100%&nbsp;Completed)</button>
 
 <div id="acc-11" role="region" aria-labelledby="accpanel-11" class="accordion-panel is-hidden">
 </div>
 
-<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="acc-12" id="accpanel-12"> &#9744; <span class="is-underline">Implementation</span> — (80%&nbsp;In progress)</button>
+<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="acc-12" id="accpanel-12"> ☐&#xFE0E; <span class="is-underline">Implementation</span> — (80%&nbsp;In progress)</button>
 
 <div id="acc-12" role="region" aria-labelledby="accpanel-12" class="accordion-panel is-hidden">
 </div>
 
-<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="acc-13" id="accpanel-13"> &#9744; <span class="is-underline">Bootstrapping plan</span> — (0%&nbsp;Stand-by)</button>
+<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="acc-13" id="accpanel-13"> ☐&#xFE0E; <span class="is-underline">Bootstrapping plan</span> — (0%&nbsp;Stand-by)</button>
 
 <div id="acc-13" role="region" aria-labelledby="accpanel-13" class="accordion-panel is-hidden">
 </div>
@@ -129,12 +136,12 @@ Can you define and implement a governance contract suite that rivals existing on
 
 <div class="accordion gor-accordion">
 
-<button type="button" aria-expanded="false" class="accordion-trigger is-muted" aria-controls="acc-14" id="accpanel-14"> &#9745; <span class="is-finished">Clarifying this issue</span> — (100%&nbsp;finished) </button>
+<button type="button" aria-expanded="false" class="accordion-trigger is-muted" aria-controls="acc-14" id="accpanel-14"> ☑&#xFE0E; <span class="is-finished">Clarifying this issue</span> — (100%&nbsp;Completed) </button>
 
 <div id="acc-14" role="region" aria-labelledby="accpanel-14" class="accordion-panel is-hidden">
 </div>
 
-<button type="button" aria-expanded="true" class="accordion-trigger" aria-controls="acc-15" id="accpanel-15"> &#9744; <span class="is-underline">Retrospectives & investigations</span> — (60%&nbsp;In progress)</button>
+<button type="button" aria-expanded="true" class="accordion-trigger" aria-controls="acc-15" id="accpanel-15"> ☐&#xFE0E; <span class="is-underline">Retrospectives & investigations</span> — (60%&nbsp;In progress)</button>
 
 <div id="acc-15" role="region" aria-labelledby="accpanel-15" class="accordion-panel">
 
@@ -142,26 +149,26 @@ Game of Realms participants and core contributors have made significant progress
 
 </div>
 
-<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="acc-16" id="accpanel-16"> &#9744; <span class="is-underline">Human specs — definitions, rules, examples</span> — (20%&nbsp;In progress)</button>
+<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="acc-16" id="accpanel-16"> ☐&#xFE0E; <span class="is-underline">Human specs — definitions, rules, examples</span> — (20%&nbsp;In progress)</button>
 
 <div id="acc-16" role="region" aria-labelledby="accpanel-16" class="accordion-panel is-muted is-hidden">
 </div>
 
-<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="acc-17" id="accpanel-17"> &#9744; <span class="is-underline">Technical specs and interfaces</span> — (0%&nbsp;Stand-by)</button>
+<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="acc-17" id="accpanel-17"> ☐&#xFE0E; <span class="is-underline">Technical specs and interfaces</span> — (0%&nbsp;Stand-by)</button>
 
 <div id="acc-17" role="region" aria-labelledby="accpanel-17" class="accordion-panel is-hidden">
 </div>
 
-<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="acc-18" id="accpanel-18"> &#9744; <span class="is-underline">Implementation</span> — (0%&nbsp;Stand-by)</button>
+<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="acc-18" id="accpanel-18"> ☐&#xFE0E; <span class="is-underline">Implementation</span> — (0%&nbsp;Stand-by)</button>
 
 <div id="acc-18" role="region" aria-labelledby="accpanel-18" class="accordion-panel is-hidden">
 </div>
 
-<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="acc-19" id="accpanel-19"> &#9744; <span class="is-underline">Documentation</span> — (0%&nbsp;Stand-by)</button>
+<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="acc-19" id="accpanel-19"> ☐&#xFE0E; <span class="is-underline">Documentation</span> — (0%&nbsp;Stand-by)</button>
 
 <div id="acc-19" role="region" aria-labelledby="accpanel-19" class="accordion-panel is-hidden"></div>
 
-<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="acc-20" id="accpanel-20"> &#9744; <span class="is-underline">Bootstrapping plan</span> — (0%&nbsp;Stand-by)</button>
+<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="acc-20" id="accpanel-20"> ☐&#xFE0E; <span class="is-underline">Bootstrapping plan</span> — (0%&nbsp;Stand-by)</button>
 
 <div id="acc-20" role="region" aria-labelledby="accpanel-20" class="accordion-panel is-hidden">
 </div>
@@ -170,6 +177,10 @@ Game of Realms participants and core contributors have made significant progress
 </div>
 </div>
 </div>
+
+### Phase II. <span class="is-muted">(Available soon)</span>
+
+---
 
 ## Register Now
 
