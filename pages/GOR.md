@@ -31,7 +31,7 @@ If you want to stack ATOM rewards and play a key role in the success of Gno.land
 
 <div id="tabpanel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1" class="">
 
-## Evaluation DAO Challenge
+#### Evaluation DAO Challenge
 
 This complex challenge seeks your skills in DAO development and implementation and is one of the most important challenges of phase one. The Evaluation DAO will ensure that contributions in Game of Realms and the Gno.land platform are fairly rewarded.
 
@@ -83,7 +83,7 @@ See [GitHub issue 519](https://github.com/gnolang/gno/issues/519) for the most u
 
 <div id="tabpanel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" class="">
 
-## Tutorials Challenge
+#### Tutorials Challenge
 
 To progress to phase two of the competition, we need high-quality tutorials, guides, and documentation from phase one participants. Help to create materials that will onboard more contributors to Gno.land.
 
@@ -130,7 +130,7 @@ We followed a collaborative approach to defining the scope of the work and creat
 
 <div id="tabpanel-3" role="tabpanel" tabindex="0" aria-labelledby="tab-3" class="">
 
-## Governance Module Challenge
+#### Governance Module Challenge
 
 Can you define and implement a governance contract suite that rivals existing ones, such as the Cosmos Hub? Show us how! We’re looking for the fairest and most efficient governance solution possible.
 

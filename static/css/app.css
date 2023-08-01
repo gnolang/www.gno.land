@@ -186,13 +186,18 @@ h3 {
   margin-block: 2.6rem 1rem;
 }
 
+h4 {
+    font-size: 1.25rem;
+    margin-block: 2.4rem 1rem;
+  }
+
 p {
   font-size: 1rem;
   margin-block: 1.2rem 1.4rem;
   line-height: 1.4;
 }
 
-p:last-child:has(a:only-child) {
+p:last-child:has(a:first-child:last-child:only-child) {
   margin-block-start: 0.8rem;
 }
 .stack > p:last-child:has(a:only-child) {
@@ -412,7 +417,7 @@ code {
   border: none;
   cursor: pointer;
   padding: 0.4rem 0;
-  font-size: 1.125rem;
+  font-size: 1.02rem;
   font-weight: 700;
   text-align: left;
   background: none;
@@ -420,6 +425,10 @@ code {
 
 .accordion-trigger ~ div {
   padding: 0.875rem 0 2.2rem;
+}
+
+.accordion-panel > p:first-child{
+    margin-block-start: 0;
 }
 
 .accordion > p {
