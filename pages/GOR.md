@@ -1,21 +1,27 @@
 # Game of Realms
 
+<div class="columns-1">
+<div class="column">
+
 The worldwide competition to find the best contributors to Gno.land is currently in phase one – for advanced developers only.
 
 Once the necessary tools to start phase two are ready, we’ll open up the competition to newer devs and non-technical contributors.
 
 If you want to stack ATOM rewards and play a key role in the success of Gno.land and web3, read more about [Game of Realms](https://github.com/gnolang/gno/issues/390) or open a [PR](https://github.com/gnolang/gno/) today.
 
+</div>
+</div>
+
 <div>
 
 <div role="tablist" aria-labelledby="tablist-1" class="tabs">
 
+<div class="columns-1">
+<div class="column">
+
 ## Join the Game of Realms
 
 ---
-
-<div class="columns-2">
-<div class="column">
 
 ### Phase I. <span class="is-muted">(Join now)</span>
 
@@ -178,7 +184,7 @@ Game of Realms participants and core contributors have made significant progress
 </div>
 </div>
 
-### Phase II. <span class="is-muted">(Available soon)</span>
+### Phase II. <span class="is-muted">(Available upon completion of phase I)</span>
 
 ---
 

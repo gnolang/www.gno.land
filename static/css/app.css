@@ -333,12 +333,13 @@ code {
     margin-block-start: 0;
 }
 
+.columns-1,
 .columns-2,
 .columns-3 {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 3.75rem;
-  margin: 3.75rem auto;
+  margin: 3rem auto;
 }
 
 .footer {
@@ -364,9 +365,13 @@ code {
   .stack > p > a{
     margin-block-end: 0;
   }
+  .columns-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .columns-2 {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .columns-3 {
     grid-template-columns: repeat(3, 1fr);
   }
