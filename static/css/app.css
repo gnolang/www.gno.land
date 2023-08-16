@@ -593,6 +593,12 @@ code {
   font-weight: bold;
 }
 
+#realm_render ul > li > ul,
+#realm_help ul > li > ul {
+  padding-left: 1rem;
+  list-style: circle inside;
+}
+
 /** menu **/
 #menu-toggle {
   display: flex;

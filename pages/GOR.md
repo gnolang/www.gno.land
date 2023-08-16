@@ -19,7 +19,7 @@ If you want to stack ATOM rewards and play a key role in the success of Gno.land
 <div class="columns-1">
 <div class="column">
 
-## Join the Game of Realms
+## Join Game of Realms
 
 ---
 
@@ -193,7 +193,7 @@ Game of Realms participants and core contributors have made significant progress
 <!-- mailchimp -->
 <div id="mc_embed_signup">
 <form action="https://land.us18.list-manage.com/subscribe/post?u=8befe3303cf82796d2c1a1aff&amp;id=5499ca154b&amp;f_id=008d70e7f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
-  <label for="mce-EMAIL">Leave your email to be informed about Game of Realms</label>
+  <label for="mce-EMAIL">Leave your email to get updates on Game of Realms</label>
   <div id="mc_embed_signup_scroll">
   	<div class="mc-field-group">
   		<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Type your email here" required>
