@@ -186,13 +186,18 @@ h3 {
   margin-block: 2.6rem 1rem;
 }
 
+h4 {
+    font-size: 1.25rem;
+    margin-block: 2.4rem 1rem;
+  }
+
 p {
   font-size: 1rem;
-  margin-block: 1.2rem;
+  margin-block: 1.2rem 1.4rem;
   line-height: 1.4;
 }
 
-p:last-child:has(a:only-child) {
+p:last-child:has(a:first-child:last-child:only-child) {
   margin-block-start: 0.8rem;
 }
 .stack > p:last-child:has(a:only-child) {
@@ -240,7 +245,7 @@ ul {
 
 li {
   list-style: none;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.6rem;
 }
 
 li > * {
@@ -328,12 +333,13 @@ code {
     margin-block-start: 0;
 }
 
+.columns-1,
 .columns-2,
 .columns-3 {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 3.75rem;
-  margin: 3.75rem auto;
+  margin: 3rem auto;
 }
 
 .footer {
@@ -359,9 +365,13 @@ code {
   .stack > p > a{
     margin-block-end: 0;
   }
+  .columns-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .columns-2 {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .columns-3 {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -412,7 +422,7 @@ code {
   border: none;
   cursor: pointer;
   padding: 0.4rem 0;
-  font-size: 1.125rem;
+  font-size: 1.02rem;
   font-weight: 700;
   text-align: left;
   background: none;
@@ -420,6 +430,10 @@ code {
 
 .accordion-trigger ~ div {
   padding: 0.875rem 0 2.2rem;
+}
+
+.accordion-panel > p:first-child{
+    margin-block-start: 0;
 }
 
 .accordion > p {
@@ -577,6 +591,12 @@ code {
 
 #realm_help .func_name td {
   font-weight: bold;
+}
+
+#realm_render ul > li > ul,
+#realm_help ul > li > ul {
+  padding-left: 1rem;
+  list-style: circle inside;
 }
 
 /** menu **/
