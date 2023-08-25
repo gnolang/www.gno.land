@@ -69,7 +69,7 @@ Are you a builder, tinkerer, or researcher? If you’re looking to create awesom
 ### Explore the universe
 
 - [Discover demo packages](https://github.com/gnolang/gno/tree/master/examples)
-- [Install Gno Key instructions](/r/demo/boards:testboard/5)
+- [Install Gno Key instructions](https://github.com/gnolang/gno/blob/master/examples/gno.land/r/demo/boards/README.md)
 - [Testnets 3](https://test3.gno.land/)
 - [Testnets 2](https://test2.gno.land/)
 - [Explorer links(soon)](#)
