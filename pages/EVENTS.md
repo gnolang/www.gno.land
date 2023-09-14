@@ -17,6 +17,17 @@ If you’re interested in building web3 with us, catch up with Gno.land in perso
 [Learn more](https://www.gophercon.com/)
 
 </div><!-- end column-->
+<div class="column">
+
+### Web3 Family
+
+- **Gno.land and Gnolang: The Dynamic Duo of Blockchain Development**
+- Barcelona, Sep 23, 2023
+- Milos Zivkovic
+
+[Learn more](https://web3fc.xyz/)
+
+</div><!-- end column-->
 </div><!-- end columns-3-->
 
 ---
