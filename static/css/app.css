@@ -358,7 +358,7 @@ code {
   .stack > p {
     flex-direction:  row;
   }
-  .stack *:not(:first-child) {
+  .stack > *:not(:first-child) {
     margin-left: 3.75rem;
   }
   .stack > a,
