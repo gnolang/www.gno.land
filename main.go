@@ -47,6 +47,7 @@ func main() {
 	app.Router.Handle("/events", handlerEvents(app))
 	app.Router.Handle("/gnolang", handlerLanguage(app))
 	app.Router.Handle("/ecosystem", handlerEcosystem(app))
+	app.Router.Handle("/newsletter", handlerNewsletter(app))
 	app.Router.Handle("/r/{path:.*}", handlerRedirect(app))
 	app.Router.Handle("/p/{path:.*}", handlerRedirect(app))
 	app.Router.Handle("/static/{path:.+}", handlerStaticFile(app))
@@ -109,6 +110,20 @@ func handlerLanguage(app gotuna.App) http.Handler {
 		app.NewTemplatingEngine().
 			Set("Title", "Gnolang (Gno) Is a Complete Language for Blockchain").
 			Set("Description", "Gnolang (Gno) is an interpretation of the popular Golang (Go) language for blockchain created by Tendermint and Cosmos founder Jae Kwon.").
+			Set("Flags", flags).
+			Set("MainContent", string(mainContent)).
+			Render(w, r, "generic.html", "funcs.html")
+	})
+}
+
+func handlerNewsletter(app gotuna.App) http.Handler {
+	md := filepath.Join(flags.pagesDir, "NEWSLETTER.md")
+	mainContent := osm.MustReadFile(md)
+
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		app.NewTemplatingEngine().
+			Set("Title", "Sign up for Gno News to get regular engineering and community updates").
+			Set("Description", "Sign up for the Gno.land newsletter to learn more about our mainnet progress, proof of contribution, smart contracts and rewarding open source software.").
 			Set("Flags", flags).
 			Set("MainContent", string(mainContent)).
 			Render(w, r, "generic.html", "funcs.html")
