@@ -7,6 +7,16 @@ If you’re interested in building web3 with us, catch up with Gno.land in perso
 ## Upcoming Events
 
 <div class="columns-3">
+
+**More Updates soon**
+
+</div><!-- end columns-3-->
+
+---
+
+## Past Events
+
+<div class="columns-3">
 <div class="column">
 
 ### GopherCon US
@@ -28,13 +38,7 @@ If you’re interested in building web3 with us, catch up with Gno.land in perso
 [Learn more](https://web3fc.xyz/)
 
 </div><!-- end column-->
-</div><!-- end columns-3-->
 
----
-
-## Past Events
-
-<div class="columns-3">
 <div class="column">
 
 ### GopherCon EU
